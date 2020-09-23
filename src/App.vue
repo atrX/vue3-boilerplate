@@ -1,6 +1,7 @@
 <template>
   <div id="nav">
-    <router-link to="/">{{ t('global.home') }}</router-link> |
+    <router-link to="/">{{ t('global.home') }}</router-link>
+    |
     <router-link to="/about">{{ t('global.about') }}</router-link>
   </div>
   <router-view />

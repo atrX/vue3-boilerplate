@@ -1,4 +1,3 @@
-// eslint-disable-next-line object-curly-newline
 import { createI18n, I18nOptions, LocaleMessages, VueMessageType } from 'vue-i18n';
 
 function loadLocaleMessages(): LocaleMessages<VueMessageType> {
