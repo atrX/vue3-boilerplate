@@ -1,10 +1,16 @@
 <template>
   <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/">{{ t('global.home') }}</router-link> |
+    <router-link to="/about">{{ t('global.about') }}</router-link>
   </div>
   <router-view />
 </template>
+
+<script lang="ts" setup>
+import { useI18n } from 'vue-i18n';
+
+export const { t } = useI18n();
+</script>
 
 <style lang="scss">
 #app {
