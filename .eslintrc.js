@@ -14,6 +14,20 @@ module.exports = {
     'max-len': ['error', 120],
     'lines-between-class-members': 'off',
     curly: ['error', 'all'],
+    'max-classes-per-file': ['off'],
+    'class-methods-use-this': 0,
+    'no-useless-constructor': 'off',
+    '@typescript-eslint/no-useless-constructor': 'error',
+    '@typescript-eslint/explicit-function-return-type': 'off',
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
+    'import/extensions': [
+      'error',
+      'ignorePackages',
+      {
+        js: 'never',
+        ts: 'never',
+      },
+    ],
   },
   overrides: [
     {
