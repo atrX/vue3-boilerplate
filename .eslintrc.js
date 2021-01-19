@@ -14,27 +14,6 @@ module.exports = {
     'max-len': ['error', 120],
     'lines-between-class-members': 'off',
     curly: ['error', 'all'],
-    '@typescript-eslint/explicit-function-return-type': [
-      'error',
-      {
-        allowExpressions: true,
-      },
-    ],
-    'import/order': [
-      'error',
-      {
-        alphabetize: { order: 'asc', caseInsensitive: true },
-        'newlines-between': 'always-and-inside-groups',
-        groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index'],
-        pathGroups: [
-          { pattern: '@/components/**', group: 'internal' },
-          { pattern: '@/router/**', group: 'internal' },
-          { pattern: '@/store/**', group: 'internal' },
-          { pattern: '@/views/**', group: 'internal' },
-          { pattern: '@/**', group: 'internal', position: 'after' },
-        ],
-      },
-    ],
   },
   overrides: [
     {
